@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'componentes-problema2';
+  
+  nombre: string = '';
+  email: string = '';
+  texto: string = '';
+  validacion: number | string = '';
+
+  contactos: any[] = [];
+
+  enviar(): void{
+    if (this.validacion == 5){
+    let contactoNuevo ={
+          'nombre': this.nombre,
+          'email': this.email,
+          'texto': this.texto,
+        }
+        this.contactos.push(contactoNuevo);
+    }    
+  }
 }
