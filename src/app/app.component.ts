@@ -14,6 +14,7 @@ export class AppComponent {
 
   contactos: any[] = [];
 
+  // Si la validacion es 5 entonces introduce los datos del vector en el array
   enviar(): void{
     if (this.validacion == 5){
     let contactoNuevo ={

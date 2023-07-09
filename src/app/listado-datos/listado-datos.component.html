@@ -1,12 +1,13 @@
-<table class="table">
+<table class="table text-center" border="1">
     <tr>
-        <th>Nombre</th>
-        <th>Email</th>
-        <th>Texto</th>
+        <th class="col-2">Nombre</th>
+        <th class="col-5">Email</th>
+        <th class="col-5">Texto</th>
     </tr>
+    <!-- Utilizando el ngFor vamos recorriendo posicion a posicion y mostrando sus datos -->
     <tr *ngFor="let contacto of contactos">
-        <td>{{contacto.nombre}}</td>
-        <td>{{contacto.email}}</td>
-        <td>{{contacto.texto}}</td>
+        <td class="col-2">{{contacto.nombre}}</td>
+        <td class="col-5">{{contacto.email}}</td>
+        <td class="col-5">{{contacto.texto}}</td>
     </tr>
 </table>

@@ -10,67 +10,47 @@
   <hr>
   <!-- ------------------------------------------ -->
   <!-- Esta parte corresponde al nombre y su input -->
-  <div class="row text-center my-3">
+  <div class="row text-center my-3 ms-5">
     <div class="col-2">
       <div class="form-label">Nombre</div>
     </div>
     <div class="col-6">
       <input type="text" class="form-control is-invalid" id="nombre" placeholder="Nombre y apellido" [(ngModel)]="nombre" required>
     </div>
-    <div class="col-6 ms-4">
-      <div class="invalid-feedback">
-        Introduzca su nombre y apellidos
-      </div>
-    </div>
   </div>
   <!-- ------------------------------------------ -->
   <!-- Esta parte corresponde al email y su input -->
-  <div class="row text-center my-3">
+  <div class="row text-center my-3 ms-5">
     <div class="col-2">
       <div class="form-label">Email</div>
     </div>
     <div class="col-6">
       <input type="email" class="form-control" id="email" placeholder="ejemplo@dominio.com" [(ngModel)]="email" required>
     </div>
-    <div class="col-6 ms-4">
-      <div class="invalid-feedback">
-        Introduzca un email valido
-      </div>
-    </div>
   </div>
   <!-- ------------------------------------------ -->
   <!-- Esta parte corresponde al mensaje y su textarea -->
-  <div class="row text-center my-3">
+  <div class="row text-center my-3 ms-5">
     <div class="col-2">
       <div class="form-label">Mensaje</div>
     </div>
     <div class="col-6">
       <textarea name="" class="form-control" id="texto" cols="30" rows="10" style="max-height: 200px; min-height: 200px" [(ngModel)]="texto" required></textarea>
     </div>
-    <div class="col-6 ms-4">
-      <div class="invalid-feedback">
-        Introduzca un mensaje
-      </div>
-    </div>
   </div>
   <!-- ------------------------------------------ -->
   <!-- Esta parte corresponde a la pregunta de validación y su input -->
-  <div class="row text-center my-3 ">
+  <div class="row text-center my-3 ms-5">
     <div class="col-2">
       <div class="form-label">2 + 3 = ?</div>
     </div>
     <div class="col-6">
       <input type="text" class="form-control" id="validacion" placeholder="Respuesta" [(ngModel)]="validacion" required>
     </div>
-    <div class="col-6 ms-4">
-      <div class="invalid-feedback">
-        Validación anti-spam incorrecta
-      </div>
-    </div>
   </div>
   <!-- ------------------------------------------ -->
   <!-- Esta parte corresponde al botón -->
-  <div class="row text-center my-4">
+  <div class="row text-center my-4 ms-5">
     <div class="col-5">
       <div class="btn btn-primary" type="submit" (click)="enviar()">Enviar</div>
     </div>
@@ -78,6 +58,7 @@
 </div>
 
   <!-- ------------------------------------------ -->
+  <!-- Pasamos a la clase hija listado-datos el array de contactos -->
 <div class="container">
   <app-listado-datos [contactos]="contactos"></app-listado-datos>
 </div>
